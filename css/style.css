@@ -88,6 +88,29 @@ h1 span{
     color: var(--skin-color);
 }
 
+.footer span{
+    position: absolute;
+    left: 40%;
+    bottom: -5%;
+    transform: translateX(-40%,);
+    font-size: 30px;
+    color: rgb(25, 122, 177);
+}
+.footer h1{
+    position: absolute;
+    left: 46%;
+    bottom: -14%;
+    transform: translateX(-46%,);
+    font-size: 30px;
+    color: rgb(25, 122, 177);
+}
+.footer .copy span::after{
+    content: '\007C';
+}
+.footer .copy h1::before{
+    content: '\007C';
+}
+
 /*media quary*/
 
 @media screen and (max-width: 768px){
