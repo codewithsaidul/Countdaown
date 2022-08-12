@@ -37,7 +37,6 @@ body{
     line-height: 1.5;
     overflow-x: hidden;
     background-color: var(--bg-black-50);
-    height: 100%;
     font-family: 'Lobster', cursive;
 }
 .center{
@@ -54,6 +53,7 @@ h1{
     text-transform: uppercase;
     padding: 80px;
     color: var(--skin-color);
+    margin-top: -130px;
 }
 h1 span{
     font-size: 6em;
@@ -63,11 +63,11 @@ h1 span{
     display: flex;
     width: 570px;
     margin-left: 60px;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 #clock div{
     position: relative;
-    padding: 30px 60px;
+    padding: 30px 45px;
     margin-right: 25px;
     border-radius: 5px;
 }
@@ -87,29 +87,11 @@ h1 span{
     color: var(--skin-color);
 }
 
-.footer span{
+.footer{
     position: absolute;
-    left: 40%;
-    bottom: -5%;
-    transform: translateX(-40%,);
-    font-size: 30px;
-    color: rgb(25, 122, 177);
+    bottom: -10px;
+    left: 400px;
 }
-.footer h1{
-    position: absolute;
-    left: 46%;
-    bottom: -14%;
-    transform: translateX(-46%,);
-    font-size: 30px;
-    color: rgb(25, 122, 177);
-}
-.footer .copy span::after{
-    content: '\007C';
-}
-.footer .copy h1::before{
-    content: '\007C';
-}
-
 /*media quary*/
 
 @media screen and (max-width: 768px){
@@ -149,5 +131,11 @@ h1 span{
     }
     #clock div .btn{
         padding: 20px 30px;
+    }
+    .footer{
+        position: absolute;
+        bottom: -600px;
+        clear: both;
+        left: 90px;
     }
 }
