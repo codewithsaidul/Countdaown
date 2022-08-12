@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down</title>
+
+    <!--======= Custome CSS ===========-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <div class="center">
+        <div class="text   outer-shadow hover-in-shadow">
+            <h1><span>2023</span><br>New Year Countdown</h1>
+        </div>
+
+        <div id="clock" ></div>
+   </div>
+
+
+   <!--========= Jquery Link ========-->
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+   <!--======= Custome Js Link ==============-->
+   <script src="countdown.js"></script>
+
+   <script type="text/javascript">
+        $('#clock').countdown('2023/1/1', function(event){
+            var $this = $(this).html(event.strftime(''
+            +'<div class="inner-shadow"><span class="outer-shadow">%w</span><span class="outer-shadow btn">Weeks</span></div>'
+            +'<div class="inner-shadow"><span class="outer-shadow">%d</span><span class="outer-shadow btn">Days</span></div>'
+            +'<div class="inner-shadow"><span class="outer-shadow">%H</span><span class="outer-shadow btn">Hours</span></div>'
+            +'<div class="inner-shadow"><span class="outer-shadow">%M</span><span class="outer-shadow btn">Min</span></div>'
+            +'<div class="inner-shadow"><span class="outer-shadow">%S</span><span class="outer-shadow btn">Sec</span></div>'
+            ))
+        })
+   </script>
+</body>
+</html>
